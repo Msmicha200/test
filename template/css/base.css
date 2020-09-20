@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  --main: blue;
+  height: auto;
+}
+
+@media (min-width: 640px) {
+  .container {
+    width: 600px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1140px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .container {
+    width: 1550px;
+  }
+}
+
+main {
+  padding: 10px 0;
+}
+
+body {
+  font-family: 'TRY Clother', sans-serif;
+}
+
+a,
+button,
+input,
+textarea {
+  background-color: unset;
+  font: inherit;
+  border: none;
+  outline: none;
+}
+
+input:invalid,
+textarea:invalid {
+  box-shadow: none;
+}
+
+a::-moz-focus-inner,
+button::-moz-focus-inner,
+input::-moz-focus-inner,
+textarea::-moz-focus-inner,
+a:focus,
+button:focus,
+input:focus,
+textarea:focus {
+  /* border: none; */
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  background-color: transparent;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.dir-col {
+  flex-direction: column;
+}
+
+.align-start {
+  justify-content: flex-start;
+}
+
+.align-end {
+  justify-content: flex-end;
+}
+
+.align-center {
+  justify-content: center;
+}
+
+.align-between {
+  justify-content: space-between;
+}
+
+.align-around {
+  justify-content: space-around;
+}
+
+.valign-start {
+  align-items: flex-start;
+}
+
+.valign-end {
+  align-items: flex-end;
+}
+
+.valign-center {
+  align-items: center;
+}
+
+.full-w {
+  width: 100%;
+}
+
+.btn {
+  background: var(--main);
+  cursor: pointer;
+  color: #fff;
+  padding: 10px 30px;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  background: lightblue;
+  color: green;
+}

@@ -1,0 +1,187 @@
+.menu {
+  margin-top: 50px;
+}
+
+.btn {
+  position: relative;
+}
+
+.btn span {
+  right: 6%;
+  pointer-events: none;
+  position: absolute;
+}
+
+.btn span > img {
+  width: 15px;
+  transition: 0.2s;
+  height: 15px;
+  opacity: 0;
+  opacity: 0.2s;
+}
+
+.sorted span > img {
+  opacity: 1;
+}
+
+.sorted[data-sortDir="desc"] span > img {
+  transform: rotate(-90deg);
+}
+
+.sorted[data-sortDir="asc"] span > img {
+  transform: rotate(90deg);
+}
+
+.description-area {
+  padding-right: 30px;
+}
+
+.description-area textarea {
+  resize: none;
+  border: 2px solid var(--main);
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 10px;
+}
+
+.description-area textarea::placeholder {
+  color: #849EEF;
+  opacity: 1;
+}
+
+.description {
+  width: 100%;
+}
+
+.new-note-form {
+  margin-top: 50px;
+}
+
+.note {
+  border-bottom: 2px solid #F1F1F1;
+  margin-top: 50px;
+  padding: 10px;
+  padding-bottom: 30px;
+  animation: 'note' 0.2s;
+  transform-origin: top;
+}
+
+@keyframes note {
+  from {
+    transform: scaleY(0);
+  }
+  to {
+    transform: scaleY(1);
+  }
+}
+
+.note-data {
+  min-width: 300px;
+}
+
+.username,
+.email {
+  color: rgb(58, 124, 58);
+}
+
+.email {
+  margin: 20px 0;
+}
+
+.done {
+  color: rgb(10, 228, 10);
+}
+
+.inprogress {
+  color: rgb(228, 196, 15);
+}
+
+.rejected {
+  color: red;
+}
+
+.pagination-buttons {
+  margin-top: 20px;
+  width: 60%;
+}
+
+.pagination-btn {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.selected-page {
+  background: green;
+}
+
+.error {
+  border-color: red !important;
+}
+
+.login {
+  font-weight: bold;
+}
+
+.edited {
+  width: 70px;
+}
+
+.login-container {
+  margin-top: 50px;
+}
+
+.login-button {
+  margin-top: 20px;
+}
+
+.nav-container {
+  margin-top: 20px;
+}
+
+.success {
+  border-color: rgb(35, 201, 71) !important;
+}
+
+@media (max-width: 992px) {
+  .new-note-form {
+    flex-direction: column;
+  }
+
+  .accept-btn {
+    margin-top: 20px;
+  }
+
+  .description-area {
+    padding: 0;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .note {
+    flex-direction: column;
+  }
+
+  .note-data {
+    align-items: center;
+    padding: 20px 0;
+  }
+
+}
+
+@media (max-width: 640px) {
+  .sorts-container {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .sorts-container li {
+    width: 100%;
+  }
+
+  .sorts-container [data-sortOn] {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
