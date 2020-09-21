@@ -24,7 +24,7 @@ class AdminController
 
           require_once ROOT."/views/admin/index.php";
         } else {
-            header("Location: /main");
+            header("Location: /login");
         }
     }
 
