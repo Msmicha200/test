@@ -77,6 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   const accept = document.getElementById('accept-note');
+  const notification = document.querySelector('.notification');
 
   accept.addEventListener('click', () => {
     const form = document.forms.newNote;
@@ -120,6 +121,11 @@ document.addEventListener('DOMContentLoaded', () => {
             notes.removeChild(notes.children[notes.children.length - 1]);
           }
           notes.insertAdjacentHTML('afterbegin', data.html);
+          notification.classList.add('visible-notif');
+
+          setTimeout(() => {
+            notification.classList.remove('visible-notif');
+          }, 1500);
         }
       });
     }

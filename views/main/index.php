@@ -86,6 +86,9 @@
       </div>
     </section>
 </main>
+<div class="notification">
+  <h3>Created successful</h3>
+</div>
 <script src="/template/scripts/tools.js"></script>
 <script src="/template/scripts/pagination.js"></script>
 <script src="/template/scripts/main.js"></script>

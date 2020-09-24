@@ -151,6 +151,7 @@ ul {
   border-radius: 10px;
   font-weight: bold;
   transition: 0.2s;
+  display: flex;
 }
 
 .btn:hover {

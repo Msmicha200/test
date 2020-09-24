@@ -7,6 +7,5 @@
 	<link rel="stylesheet" href="/template/css/base.css">
 	<link rel="stylesheet" href="/template/css/main.css">
 	<link rel="stylesheet" href="/template/css/uvmInput.css">
-	<link rel="stylesheet" href="/template/css/select.css">
 </head>
 <body>

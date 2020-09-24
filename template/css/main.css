@@ -143,6 +143,28 @@
   border-color: rgb(35, 201, 71) !important;
 }
 
+.notification {
+  background: rgba(30, 223, 78, 0.493);
+  position: absolute;
+  top: 5%;
+  right: 2%;
+  padding: 20px 50px;
+  border-radius: 10px;
+  pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.visible-notif {
+  visibility: visible;
+  opacity: 1;
+}
+
+.notification h3 {
+  color: rgb(15, 78, 9);
+}
+
 @media (max-width: 992px) {
   .new-note-form {
     flex-direction: column;
